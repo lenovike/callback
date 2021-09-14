@@ -1,0 +1,18 @@
+<!--@subject {{trans "Request to call back"}} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table class="message-details">
+    <tr>
+        <td><b>{{trans 'The customer left the online application with the request to call back' }}</b></td>
+    </tr>
+    <tr>
+        <td><b>{{trans 'Application number'}}</b></td>
+        <td>{{var appNumber}}</td>
+    </tr>
+    <tr>
+        <td><b>{{trans 'Phone'}}</b></td>
+        <td>{{var phone}}</td>
+    </tr>
+</table>
+{{template config_path="design/email/footer_template"}}

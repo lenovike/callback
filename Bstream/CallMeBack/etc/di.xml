@@ -1,0 +1,16 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="callback_listing_data_source" xsi:type="string">Bstream\CallMeBack\Model\ResourceModel\CallBack\UiCollection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Bstream\CallMeBack\Model\ResourceModel\CallBack\UiCollection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">bstream_callback</argument>
+            <argument name="resourceModel" xsi:type="string">Bstream\CallMeBack\Model\ResourceModel\CallBack</argument>
+        </arguments>
+    </virtualType>
+    <preference for="Bstream\CallMeBack\Api\CallBackRepositoryInterface" type="Bstream\CallMeBack\Model\CallBackRepository"/>
+</config>

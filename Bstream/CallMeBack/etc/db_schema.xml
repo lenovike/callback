@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Vaimo Group. All rights reserved.
+ * See LICENSE_VAIMO.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="bstream_callback" resource="default" engine="innodb" comment="Callback">
+        <column xsi:type="int" name="id" unsigned="true" nullable="false" identity="true"
+                comment="id"/>
+        <column xsi:type="varchar" name="phone_number" nullable="false" unsigned="true" length="10" comment="Phone Number"/>
+        <column xsi:type="smallint" name="status" nullable="false" default="0" comment="Status"/>
+        <column xsi:type="datetime" name="created_at" nullable="false" unsigned="true" comment="Created At" />
+        <column xsi:type="datetime" name="updated_at" nullable="true" length="10" comment="Updated At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

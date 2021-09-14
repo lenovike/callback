@@ -1,0 +1,188 @@
+.call-back-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+
+}
+
+.call-back-modal .modal-header {
+    background-color: #fff;
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.call-back-modal .modal-header .modal-title{
+    font-size: 16px;
+}
+
+.call-back-modal .modal-inner-wrap {
+    background-color: #fff;
+    padding: 40px;
+    width: 600px;
+    border-radius: 4px;
+}
+
+.request-modal .modal-header button{
+    position: inherit;
+    top: 0;
+    right: 0;
+    transition: all 200ms;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0.8;
+    background: 0;
+    border: 0;
+    padding: 0 0 30px 30px;
+    line-height: 0;
+}
+.call-back-modal .modal-content {
+    background-color: #fff;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.request-modal .modal-footer {
+    display: none;
+}
+
+.request-modal .modal-header button:hover {
+    color: #d11f1f;
+}
+
+.response-modal .modal-header button{
+    display: none;
+}
+
+#callback-modal {
+    margin: 5px 0;
+}
+
+#callback-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+#callback-form .field {
+    margin-bottom: 10px;
+}
+
+#callback-form .field input {
+    width: 300px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #adadad;
+}
+
+#click-callback {
+    height: 20px;
+    width: 140px;
+    border: 1px solid #7b1111;
+    border-radius: 4px;
+    background-color: #7b1111;
+
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+#create-callback-btn {
+    margin-left: auto;
+    border-radius: 4px;
+    border: solid 1px #dcdcdc;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #323232;
+    height: 40px;
+    line-height: 1;
+}
+
+#create-callback-btn:hover {
+    border: 1px solid #dcdcdc;
+    background-color: #dbdefb;
+    color: #323232;
+}
+
+.response-modal .modal-footer {
+    padding: 15px 0 0 0;
+}
+.callback-loader {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.6;
+    background: #fbfaf6;
+    background-image: url('images/loader.gif');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#header-callback-btn {
+    font-size: 1.1em;
+    font-weight: 600;
+    /*color: #999;*/
+    color: #7b1111;
+    min-width: max-content;
+    min-width: -moz-max-content;
+    font-family: Liberation Sans;
+    border: none;
+    background: none;
+}
+
+.call-back-menu {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 991px){
+    .click-callback-btn {
+        display: none;
+    }
+
+    #click-callback {
+        background-image: none;
+    }
+
+}
+@media (max-width: 471px) {
+    .call-back-modal .modal-inner-wrap {
+        width: 100%;
+        border: none;
+        border-radius: unset;
+    }
+
+    #callback-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #create-callback-btn {
+        margin: 0 auto;
+    }
+    .request-modal .modal-header button{
+        position: inherit;
+        top: 0;
+        right: 0;
+        transition: all 200ms;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        opacity: 0.8;
+        background: 0;
+        border: 0;
+        padding: 12px 0 30px 30px;
+        line-height: 0;
+    }
+
+}

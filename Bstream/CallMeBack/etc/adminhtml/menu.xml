@@ -1,0 +1,14 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+                id="Magento_Customer::CallBack_show"
+                title="Callback List"
+                translate="title"
+                module="Bstream_CallMeBack"
+                sortOrder="20"
+                parent="Magento_Customer::customer"
+                action="callback/index"
+                resource="Magento_Customer::manage"
+        />
+    </menu>
+</config>

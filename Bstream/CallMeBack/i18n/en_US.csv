@@ -1,0 +1,27 @@
+"Please correct the data sent.","Please correct the data sent."
+"You successfully saved changes for request #%1","You successfully saved changes for request #%1"
+"Thanks for the appeal! Your application number #%1","Thanks for the appeal! Your application number #%1"
+"Your application is processing #%1","Your application is processing #%1"
+"Data error","Data error"
+"Unable to find call back request with ID ""%1""","Unable to find call back request with ID ""%1"""
+Active,Active
+Closed,Closed
+"Get a call","Get a call"
+Email,Email
+Send,Send
+"Request to call back","Request to call back"
+"The customer left the online application with the request to call back","The customer left the online application with the request to call back"
+Phone,Phone
+"Enter a phone number:","Enter a phone number:"
+Close,Close
+"Waiting for a call back","Waiting for a call back"
+"Call Back","Call Back"
+"Email Options","Email Options"
+"Send Emails To","Send Emails To"
+"Email Sender","Email Sender"
+"Email Template","Email Template"
+ID,ID
+"Phone Number","Phone Number"
+"Create at","Create at"
+Status,Status
+"Call Date","Call Date"

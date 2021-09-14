@@ -1,0 +1,33 @@
+<?php
+/**
+ * Category view template
+ *
+ * @var $block \Bstream\CallMeBack\Block\CallBackBtn
+ */
+?>
+
+<button class="click-callback-btn" id="click-callback"><?=__('Call Me Back')?></button>
+<div id="callback-modal" style="display:none;">
+    <form id="callback-form" method="post" data-mage-init='{"validation": {}}'>
+        <div class="field phone-number required">
+            <div class="control">
+                <input data-validate='{"required":true}' name="phone-number" id="phone-number" title="<?php echo __('Email') ?>" value="" class="input-text" type="text" placeholder="067 000 00 00" />
+            </div>
+        </div>
+        <button id="create-callback-btn" class="action primary"><?php echo __('Send')?></button>
+    </form>
+</div>
+<div id="callback-response-modal" style="display:none;">
+    <div id="callback-response" class=""></div>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "BstreamCallBackJs":{"ajaxUrl":"<?php echo $block->getActionUrlCreate(); ?>"}
+        },
+        "#callback-form": {
+            "validation": {}
+        }
+    }
+</script>
