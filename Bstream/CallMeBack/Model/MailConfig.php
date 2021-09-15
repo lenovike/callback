@@ -45,9 +45,9 @@ class MailConfig
     /**
      * @return string
      */
-    public function emailTemplate()
+    public function emailTemplate() : string
     {
-        return $this->scopeConfig->getValue(
+        return (string)$this->scopeConfig->getValue(
             self::XML_PATH_EMAIL_TEMPLATE,
             ScopeInterface::SCOPE_STORE
         );
@@ -56,9 +56,9 @@ class MailConfig
     /**
      * @return string
      */
-    public function emailSender()
+    public function emailSender() : string
     {
-        return $this->scopeConfig->getValue(
+        return (string)$this->scopeConfig->getValue(
             self::XML_PATH_EMAIL_SENDER,
             ScopeInterface::SCOPE_STORE
         );
@@ -67,9 +67,9 @@ class MailConfig
     /**
      * @return string
      */
-    public function getCopyRecipient()
+    public function getCopyRecipient() : string
     {
-        return $this->scopeConfig->getValue(
+        return (string)$this->scopeConfig->getValue(
             self::XML_PATH_EMAIL_COPY_RECIPIENT,
             ScopeInterface::SCOPE_STORE
         );
@@ -78,9 +78,9 @@ class MailConfig
     /**
      * @return string
      */
-    public function emailRecipient()
+    public function emailRecipient() : string
     {
-        return $this->scopeConfig->getValue(
+        return (string)$this->scopeConfig->getValue(
             self::XML_PATH_EMAIL_RECIPIENT,
             ScopeInterface::SCOPE_STORE
         );

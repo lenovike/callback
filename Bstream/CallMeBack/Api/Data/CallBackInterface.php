@@ -21,25 +21,25 @@ interface CallBackInterface
     /**
      * @return int
      */
-    public function getId();
+    public function getId() : ?int;
 
     /**
      * @return string
      */
-    public function getPhoneNumber();
+    public function getPhoneNumber() : ?string;
 
     /**
      * @return string
      */
-    public function getCreatedAt();
+    public function getCreatedAt(): string;
 
     /**
      * @return int
      */
-    public function getStatus();
+    public function getStatus(): int;
 
     /**
      * @return string
      */
-    public function getUpdatedAt();
+    public function getUpdatedAt(): ?string;
 }
